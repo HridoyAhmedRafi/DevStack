@@ -19,6 +19,8 @@ const TechnologiesCard = ({
     toast(`${Technologie.name} Added successfully`, {
       position: "bottom-right",
     });
+
+    
     const selectedTechnologiesCard = [...selectedTechnologies, Technologie];
     setSelectedTechnologies(selectedTechnologiesCard);
     setIsClicked(true);
