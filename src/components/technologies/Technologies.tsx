@@ -11,15 +11,15 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
   const Technologies = use(TechnologiesPromise);
 
   return (
-    <div>
-      <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4">
+      <div>
         <h1 className="text-[36px] font-bold">
           Explore the{" "}
           <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
             Technologies
           </span>
         </h1>
-        <p className="text-[16px] text-[#c3c3c3f0]">
+        <p className="text-[16px] text-[#94A3B8]">
           Pick one technology per category to build your ideal stack.
         </p>
       </div>

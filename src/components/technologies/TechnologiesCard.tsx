@@ -7,7 +7,7 @@ interface TechnologiesCardProps {
 const TechnologiesCard = ({ Technologie }: TechnologiesCardProps) => {
   return (
     <div>
-      <div className="border border-[#90929533] rounded-[13px] ">
+      <div className="border border-[#90929533] rounded-[13px] cursor-pointer  transition-all duration-300 hover:-translate-y-2">
         <div className="py-4 px-4 space-y-4">
           <div className="flex justify-between ">
             <img

@@ -143,7 +143,7 @@
     "id": 15,
     "name": "Vite",
     "category": "Tools",
-    "description": "A modern frontend build tool that provides a fast development environment for web projects.",
+    "description": "Vite is a modern frontend build tool that provides a fast development environment for web projects. It eliminates the tedious.",
     "icon": "https://cdn.simpleicons.org/vite/646CFF",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
