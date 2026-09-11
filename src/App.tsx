@@ -1,6 +1,6 @@
 import "./App.css";
-import Hero from "./Hero";
-import Navber from "./Navber";
+import Hero from "./components/Hero";
+import Navber from "./components/Navber";
 
 function App() {
   return (
