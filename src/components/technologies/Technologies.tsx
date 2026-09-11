@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 import AvailableTechnologies from "./AvailableTechnologies";
 import SelectedTechnologies from "./SelectedTechnologies";
@@ -9,6 +9,10 @@ interface TechnologiesPromiseProps {
 
 const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
   const Technologies = use(TechnologiesPromise);
+
+  const [selectedTechnologies, setSelectedTechnologies] = useState<
+    TechnologiesType[]
+  >([]);
 
   return (
     <div className="container mx-auto px-4">
@@ -29,6 +33,8 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
           <div>
             <AvailableTechnologies
               Technologies={Technologies}
+              selectedTechnologies={selectedTechnologies}
+              setSelectedTechnologies={setSelectedTechnologies}
             ></AvailableTechnologies>
           </div>
         </div>

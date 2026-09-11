@@ -1,11 +1,18 @@
+import type { Dispatch, SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 import TechnologiesCard from "./TechnologiesCard";
 
 interface TechnologieProps {
   Technologies: TechnologiesType[];
+  selectedTechnologies: TechnologiesType[];
+  setSelectedTechnologies: Dispatch<SetStateAction<TechnologiesType[]>>;
 }
 
-const AvailableTechnologies = ({ Technologies }: TechnologieProps) => {
+const AvailableTechnologies = ({
+  Technologies,
+  selectedTechnologies,
+  setSelectedTechnologies,
+}: TechnologieProps) => {
   return (
     <>
       <div className=" my-10">
@@ -14,6 +21,8 @@ const AvailableTechnologies = ({ Technologies }: TechnologieProps) => {
             <TechnologiesCard
               Technologie={Technologie}
               key={Technologie.id}
+              selectedTechnologies={selectedTechnologies}
+              setSelectedTechnologies={setSelectedTechnologies}
             ></TechnologiesCard>
           ))}
         </div>

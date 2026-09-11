@@ -1,10 +1,17 @@
+import type { Dispatch, SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 
 interface TechnologiesCardProps {
   Technologie: TechnologiesType;
+  selectedTechnologies: TechnologiesType[];
+  setSelectedTechnologies: Dispatch<SetStateAction<TechnologiesType[]>>;
 }
 
-const TechnologiesCard = ({ Technologie }: TechnologiesCardProps) => {
+const TechnologiesCard = ({
+  Technologie,
+  selectedTechnologies,
+  setSelectedTechnologies,
+}: TechnologiesCardProps) => {
   return (
     <div>
       <div className="border border-[#90929533] rounded-[13px] cursor-pointer  transition-all duration-300 hover:-translate-y-2">
