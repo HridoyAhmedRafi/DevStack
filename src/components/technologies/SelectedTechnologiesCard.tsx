@@ -2,6 +2,7 @@ import type { Dispatch, SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 import { RxCross2 } from "react-icons/rx";
 
+
 interface SelectedTechnologieCardProps {
   selectedTechnologie: TechnologiesType;
   selectedTechnologies: TechnologiesType[];
@@ -13,6 +14,14 @@ const SelectedTechnologiesCard = ({
   selectedTechnologies,
   setSelectedTechnologies,
 }: SelectedTechnologieCardProps) => {
+  const handleRemoveTechnologies = (selectedTechnologie: TechnologiesType) => {
+    const remainingTechnologie = selectedTechnologies.filter(
+      (currentTechnologie) => currentTechnologie.id !== selectedTechnologie.id,
+    );
+
+    setSelectedTechnologies(remainingTechnologie);
+  };
+
   return (
     <div>
       <div className="flex justify-between items-center border border-[#90929533] py-3 px-3 rounded-[13px]">
@@ -33,7 +42,10 @@ const SelectedTechnologiesCard = ({
         </div>
 
         <span>
-          <RxCross2 className="text-[#94A3B8] text-2xl cursor-pointer"  />
+          <RxCross2
+            className="text-[#94A3B8] text-2xl cursor-pointer"
+            onClick={() => handleRemoveTechnologies(selectedTechnologie)}
+          />
         </span>
       </div>
     </div>

@@ -25,6 +25,11 @@ const SelectedTechnologies = ({
       </div>
     );
   }
+
+  const handleRemoveAll = () => {
+    setSelectedTechnologies([]);
+  };
+
   return (
     <div className="my-10 border border-[#90929533] px-4 py-5 rounded-[13px] space-y-3">
       <div>
@@ -38,6 +43,13 @@ const SelectedTechnologies = ({
           setSelectedTechnologies={setSelectedTechnologies}
         ></SelectedTechnologiesCard>
       ))}
+
+      <button
+        onClick={handleRemoveAll}
+        className="text-[#D82C20] w-full py-2 border border-[#ED8C85] rounded-2xl my-5 font-bold cursor-pointer"
+      >
+        Remove All
+      </button>
     </div>
   );
 };

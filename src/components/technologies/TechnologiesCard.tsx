@@ -1,5 +1,6 @@
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
+import { toast } from "react-toastify";
 
 interface TechnologiesCardProps {
   Technologie: TechnologiesType;
@@ -15,6 +16,9 @@ const TechnologiesCard = ({
   const [isClicked, setIsClicked] = useState(false);
 
   const handleSelectedTechnologiesCard = () => {
+    toast(`${Technologie.name} Added successfully`, {
+      position: "bottom-right",
+    });
     const selectedTechnologiesCard = [...selectedTechnologies, Technologie];
     setSelectedTechnologies(selectedTechnologiesCard);
     setIsClicked(true);
