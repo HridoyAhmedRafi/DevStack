@@ -3,7 +3,7 @@ import Logo from "../src/assets/logo-text.png";
 const Navber = () => {
   return (
     <div className="border-b border-[#90929533]">
-      <nav className="flex items-center justify-between container mx-auto px-4 py-4 ">
+      <nav className="flex items-center justify-between container mx-auto px-4 py-4 fixed top-0 left-0 right-0 z-50 bg-white  ">
         <div>
           <img src={Logo} alt="DevStack" />
         </div>
