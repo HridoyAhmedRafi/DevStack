@@ -17,10 +17,10 @@ const Hero = () => {
             your next project.
           </p>
           <div className="flex items-center gap-4">
-            <button className="bg-linear-to-r from-orange-500 to-pink-500 py-2 px-3 rounded text-white">
+            <button className="cursor-pointer bg-linear-to-r from-orange-500 to-pink-500 py-2 px-3 rounded text-white">
               Explore Technologies
             </button>
-            <button className="border border-[#7273745a] py-2 px-10 rounded text-[#475569]">
+            <button className="cursor-pointer border border-[#7273745a] py-2 px-10 rounded text-[#475569]">
               Learn More
             </button>
           </div>

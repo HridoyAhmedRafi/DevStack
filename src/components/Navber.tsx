@@ -10,14 +10,14 @@ const Navber = () => {
 
         <ul className="flex justify-between gap-5 text-[#475569]">
           <li className="text-[#DB2777]">Home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className="cursor-pointer">Technologies</li>
+          <li className="cursor-pointer">Projects</li>
+          <li className="cursor-pointer">About</li>
+          <li className="cursor-pointer">Contact</li>
         </ul>
         <div className="flex justify-between gap-4">
-          <button>Sign In</button>
-          <button className="bg-[#D91B7E] py-1.75 px-4 text-white rounded-3xl">
+          <button className="cursor-pointer">Sign In</button>
+          <button className="bg-[#D91B7E] py-1.75 px-4 text-white rounded-3xl cursor-pointer">
             Sign Up
           </button>
         </div>
