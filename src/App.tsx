@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navber from "./components/Navber";
 import Technologies from "./components/technologies/Technologies";
 import type { TechnologiesType } from "./types/TechnologieType";
+import Footer from "./components/Footer";
 
 const TechnologiesPromiseFetch = async (): Promise<TechnologiesType[]> => {
   const res = await fetch("/data.json");
@@ -21,6 +22,7 @@ function App() {
       <Suspense fallback="Loading...">
         <Technologies TechnologiesPromise={TechnologiesPromise}></Technologies>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }
