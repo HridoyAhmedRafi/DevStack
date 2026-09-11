@@ -9,7 +9,7 @@ const Navber = () => {
         </div>
 
         <ul className="flex justify-between gap-5 text-[#475569]">
-          <li className="text-[#DB2777]">Home</li>
+          <li className="text-[#DB2777] cursor-pointer">Home</li>
           <li className="cursor-pointer">Technologies</li>
           <li className="cursor-pointer">Projects</li>
           <li className="cursor-pointer">About</li>
