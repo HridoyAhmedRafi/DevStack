@@ -1,9 +1,10 @@
 import "./App.css";
+import Navber from "./Navber";
 
 function App() {
   return (
     <>
-      <h1 className="text-4xl text-fuchsia-400">hello world</h1>
+      <Navber></Navber>
     </>
   );
 }
