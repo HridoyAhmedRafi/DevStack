@@ -41,7 +41,10 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
 
         <div className="col-span-3">
           <div>
-            <SelectedTechnologies></SelectedTechnologies>
+            <SelectedTechnologies
+              selectedTechnologies={selectedTechnologies}
+              setSelectedTechnologies={setSelectedTechnologies}
+            ></SelectedTechnologies>
           </div>
         </div>
       </div>

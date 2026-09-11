@@ -1,4 +1,4 @@
-import type { Dispatch, SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 
 interface TechnologiesCardProps {
@@ -12,6 +12,14 @@ const TechnologiesCard = ({
   selectedTechnologies,
   setSelectedTechnologies,
 }: TechnologiesCardProps) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleSelectedTechnologiesCard = () => {
+    const selectedTechnologiesCard = [...selectedTechnologies, Technologie];
+    setSelectedTechnologies(selectedTechnologiesCard);
+    setIsClicked(true);
+  };
+
   return (
     <div>
       <div className="border border-[#90929533] rounded-[13px] cursor-pointer  transition-all duration-300 hover:-translate-y-2">
@@ -42,7 +50,11 @@ const TechnologiesCard = ({
             <p className="text-[#64748B]">{Technologie.difficulty}</p>
             <span>⭐{Technologie.rating}</span>
           </div>
-          <button className="bg-[#0A0F1D] text-white w-full py-3 px-2 rounded-[13px] cursor-pointer ">
+          <button
+            onClick={handleSelectedTechnologiesCard}
+            className="bg-[#0A0F1D] text-white w-full py-3 px-2 rounded-[13px] cursor-pointer disabled:bg-gray-500 disabled:opacity-70 disabled:cursor-not-allowed "
+            disabled={isClicked}
+          >
             Add to Stack
           </button>
         </div>
