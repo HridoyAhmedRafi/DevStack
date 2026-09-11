@@ -13,10 +13,10 @@ const TechnologiesCard = ({
   selectedTechnologies,
   setSelectedTechnologies,
 }: TechnologiesCardProps) => {
-  // const [isClicked, setIsClicked] = useState(false);
   const isClicked = selectedTechnologies.some(
     (technologie) => technologie.id === Technologie.id,
   );
+
   const handleSelectedTechnologiesCard = () => {
     toast.success(`${Technologie.name} Added successfully`, {
       position: "bottom-right",
@@ -24,7 +24,6 @@ const TechnologiesCard = ({
 
     const selectedTechnologiesCard = [...selectedTechnologies, Technologie];
     setSelectedTechnologies(selectedTechnologiesCard);
-    // setIsClicked(true);
   };
 
   return (

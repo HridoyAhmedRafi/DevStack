@@ -28,7 +28,7 @@ const SelectedTechnologies = ({
   }
 
   const handleRemoveAll = () => {
-    toast.warning(` Removed All`, {
+    toast.info(` Removed All`, {
       position: "bottom-right",
     });
     setSelectedTechnologies([]);
@@ -42,6 +42,7 @@ const SelectedTechnologies = ({
       </div>
       {selectedTechnologies.map((selectedTechnologie) => (
         <SelectedTechnologiesCard
+          key={selectedTechnologie.id}
           selectedTechnologie={selectedTechnologie}
           selectedTechnologies={selectedTechnologies}
           setSelectedTechnologies={setSelectedTechnologies}
