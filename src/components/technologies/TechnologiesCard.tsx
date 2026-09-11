@@ -8,7 +8,7 @@ const TechnologiesCard = ({ Technologie }: TechnologiesCardProps) => {
   return (
     <div>
       <div className="border border-[#90929533] rounded-[13px] ">
-        <div className="py-4 px-4 space-y-3">
+        <div className="py-4 px-4 space-y-4">
           <div className="flex justify-between ">
             <img
               src={Technologie.icon}
@@ -35,7 +35,9 @@ const TechnologiesCard = ({ Technologie }: TechnologiesCardProps) => {
             <p className="text-[#64748B]">{Technologie.difficulty}</p>
             <span>⭐{Technologie.rating}</span>
           </div>
-          <button className="bg-[#0A0F1D] text-white w-full py-3 px-2 rounded-[13px] cursor-pointer ">Add to Stack</button>
+          <button className="bg-[#0A0F1D] text-white w-full py-3 px-2 rounded-[13px] cursor-pointer ">
+            Add to Stack
+          </button>
         </div>
       </div>
     </div>
