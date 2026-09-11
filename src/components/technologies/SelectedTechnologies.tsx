@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
+import SelectedTechnologiesCard from "./SelectedTechnologiesCard";
 
 interface selectedTechnologiesProps {
   selectedTechnologies: TechnologiesType[];
@@ -31,7 +32,11 @@ const SelectedTechnologies = ({
         <p className="text-[#94A3B8]">{`${selectedTechnologies.length} Technology Selected`}</p>
       </div>
       {selectedTechnologies.map((selectedTechnologie) => (
-        <p>{selectedTechnologie.name}</p>
+        <SelectedTechnologiesCard
+          selectedTechnologie={selectedTechnologie}
+          selectedTechnologies={selectedTechnologies}
+          setSelectedTechnologies={setSelectedTechnologies}
+        ></SelectedTechnologiesCard>
       ))}
     </div>
   );
