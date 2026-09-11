@@ -3,7 +3,7 @@ import HeroImg from "../assets/banner-stack.png";
 const Hero = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 items-center  container mx-auto px-4 my-6">
+      <div className="grid grid-cols-2 items-center  container mx-auto px-4 my-25">
         <div className="space-y-3">
           <h1 className="text-[60px] font-bold">
             Build Your Ideal<br></br>

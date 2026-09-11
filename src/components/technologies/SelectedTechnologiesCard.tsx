@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 import { RxCross2 } from "react-icons/rx";
-
+import { toast } from "react-toastify";
 
 interface SelectedTechnologieCardProps {
   selectedTechnologie: TechnologiesType;
@@ -19,6 +19,9 @@ const SelectedTechnologiesCard = ({
       (currentTechnologie) => currentTechnologie.id !== selectedTechnologie.id,
     );
 
+    toast.info(`${selectedTechnologie.name} Removed successfully`, {
+      position: "bottom-right",
+    });
     setSelectedTechnologies(remainingTechnologie);
   };
 

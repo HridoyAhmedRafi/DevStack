@@ -15,7 +15,7 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
   >([]);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mb-20">
       <div>
         <h1 className="text-[36px] font-bold">
           Explore the{" "}

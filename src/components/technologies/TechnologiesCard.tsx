@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { TechnologiesType } from "../../types/TechnologieType";
 import { toast } from "react-toastify";
 
@@ -13,17 +13,18 @@ const TechnologiesCard = ({
   selectedTechnologies,
   setSelectedTechnologies,
 }: TechnologiesCardProps) => {
-  const [isClicked, setIsClicked] = useState(false);
-
+  // const [isClicked, setIsClicked] = useState(false);
+  const isClicked = selectedTechnologies.some(
+    (technologie) => technologie.id === Technologie.id,
+  );
   const handleSelectedTechnologiesCard = () => {
-    toast(`${Technologie.name} Added successfully`, {
+    toast.success(`${Technologie.name} Added successfully`, {
       position: "bottom-right",
     });
 
-    
     const selectedTechnologiesCard = [...selectedTechnologies, Technologie];
     setSelectedTechnologies(selectedTechnologiesCard);
-    setIsClicked(true);
+    // setIsClicked(true);
   };
 
   return (
@@ -61,7 +62,7 @@ const TechnologiesCard = ({
             className="bg-[#0A0F1D] text-white w-full py-3 px-2 rounded-[13px] cursor-pointer disabled:bg-gray-500 disabled:opacity-70 disabled:cursor-not-allowed "
             disabled={isClicked}
           >
-            Add to Stack
+            {isClicked === true ? "✓ Added to Stack" : "Add to Stack"}
           </button>
         </div>
       </div>
