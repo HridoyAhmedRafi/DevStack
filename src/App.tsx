@@ -17,6 +17,7 @@ const TechnologiesPromise = TechnologiesPromiseFetch();
 function App() {
   return (
     <>
+    
       <Navber></Navber>
       <Hero></Hero>
       <Suspense fallback={<h1 className="text-2xl container mx-auto px-4">Loading...</h1>}>
