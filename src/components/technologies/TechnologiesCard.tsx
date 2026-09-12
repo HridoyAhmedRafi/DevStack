@@ -40,8 +40,8 @@ const TechnologiesCard = ({
               {Technologie.badge}
             </p>
           </div>
-          <div>
-            <p className="text-[18px] text-[#0F172A] font-bold">
+          <div className="space-y-5">
+            <p className="text-[18px] text-[#0F172A] font-bold ">
               {Technologie.name}
             </p>
             <p className="text-[#64748B] text-[15px]">
