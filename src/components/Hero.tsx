@@ -3,10 +3,10 @@ import HeroImg from "../assets/banner-stack.png";
 const Hero = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 items-center  container mx-auto px-4 my-25">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center  container mx-auto px-4 my-25">
         <div className="space-y-3">
-          <h1 className="text-[60px] font-bold">
-            Build Your Ideal<br></br>
+          <h1 className=" text-[40px] md:text-[60px]  font-bold">
+            Build Your Ideal <br></br>
             <span className="bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
               Development Stack
             </span>
