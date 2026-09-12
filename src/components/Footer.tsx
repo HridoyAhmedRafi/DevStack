@@ -8,7 +8,6 @@ const Footer = () => {
           <img src={FooterLogo} alt="DevStack" />
           <p className=" text-[#64748B]  ">
             Curated tools, technologies, and resources for developers building
-            <br></br>
             modern software.
           </p>
           <ul className=" flex justify-between items-center gap-4 ">
