@@ -3,36 +3,36 @@ import FooterLogo from "../assets/logo-text.png";
 const Footer = () => {
   return (
     <div>
-      <div className="border-t border-[#90929533] container mx-auto px-4 py-20 flex justify-between">
-        <div className="space-y-3">
+      <div className="border-t border-[#90929533] container mx-auto px-4 py-20  grid grid-cols-1 md:grid-cols-4 ">
+        <div className=" space-y-3 ">
           <img src={FooterLogo} alt="DevStack" />
-          <p className="text-[#64748B]">
+          <p className=" text-[#64748B]  ">
             Curated tools, technologies, and resources for developers building
             <br></br>
             modern software.
           </p>
-          <ul className="flex gap-4">
+          <ul className=" flex justify-between items-center gap-4 ">
             <li className="text-[#475569] font-semibold">GitHub</li>
             <li className="text-[#475569] font-semibold">Twitter</li>
             <li className="text-[#475569]  font-semibold">LinkedIn</li>
           </ul>
         </div>
 
-        <ul className="flex flex-col gap-2">
+        <ul className="hidden md:flex flex-col gap-2">
           <li className="text-[#0F172A] font-bold">PRODUCT</li>
           <li className="text-[#64748B]">Home</li>
           <li className="text-[#64748B]">Technologies</li>
           <li className="text-[#64748B]">Projects</li>
         </ul>
 
-        <ul className="flex flex-col gap-2">
+        <ul className="hidden md:flex flex-col gap-2">
           <li className="text-[#0F172A] font-bold">COMPANY</li>
           <li className="text-[#64748B]">About</li>
           <li className="text-[#64748B]">Contact</li>
           <li className="text-[#64748B]">Careers</li>
         </ul>
 
-        <ul className="flex flex-col gap-2">
+        <ul className="hidden md:flex flex-col gap-2">
           <li className="text-[#0F172A] font-bold">LEGAL</li>
           <li className="text-[#64748B]">Privacy Policy</li>
           <li className="text-[#64748B]">Terms of Service</li>
@@ -44,7 +44,7 @@ const Footer = () => {
           <p className="text-[#94A3B8]">
             © 2026 Dev Stack. All rights reserved.
           </p>
-          <ul className="flex justify-between gap-5 text-[#94A3B8]">
+          <ul className="flex  justify-between gap-5 text-[#94A3B8]">
             <li>Privacy</li>
             <li>Terms</li>
           </ul>

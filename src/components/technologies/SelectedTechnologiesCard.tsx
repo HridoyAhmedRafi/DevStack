@@ -27,7 +27,7 @@ const SelectedTechnologiesCard = ({
 
   return (
     <div>
-      <div className="flex justify-between items-center border border-[#90929533] py-3 px-3 rounded-[13px]">
+      <div className="flex justify-between items-center border border-[#90929533] rounded-[13px] py-3 px-3">
         <div className="flex items-center gap-3">
           <img
             src={selectedTechnologie.icon}
