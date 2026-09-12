@@ -28,8 +28,8 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-12 gap-5">
-        <div className="col-span-9">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
+        <div className=" col-span-1 md:col-span-9">
           <div>
             <AvailableTechnologies
               Technologies={Technologies}
@@ -39,7 +39,7 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesPromiseProps) => {
           </div>
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-1 md:col-span-3">
           <div>
             <SelectedTechnologies
               selectedTechnologies={selectedTechnologies}
