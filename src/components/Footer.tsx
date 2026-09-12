@@ -10,7 +10,7 @@ const Footer = () => {
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>
-          <ul className=" flex justify-between items-center gap-4 ">
+          <ul className=" flex  items-center gap-4 ">
             <li className="text-[#475569] font-semibold">GitHub</li>
             <li className="text-[#475569] font-semibold">Twitter</li>
             <li className="text-[#475569]  font-semibold">LinkedIn</li>
