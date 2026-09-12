@@ -19,7 +19,7 @@ function App() {
     <>
       <Navber></Navber>
       <Hero></Hero>
-      <Suspense fallback="Loading...">
+      <Suspense fallback={<h1 className="text-2xl container mx-auto px-4">Loading...</h1>}>
         <Technologies TechnologiesPromise={TechnologiesPromise}></Technologies>
       </Suspense>
       <Footer></Footer>
