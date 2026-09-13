@@ -16,7 +16,7 @@ const Navber = () => {
           <li className="cursor-pointer">Contact</li>
         </ul>
         <div className="flex justify-center  gap-4">
-          <button className="cursor-pointer">Sign In</button>
+          <button className="cursor-pointer text-[#475569]">Sign In</button>
           <button className="bg-[#D91B7E] py-1.75 px-4 text-white rounded-3xl cursor-pointer">
             Sign Up
           </button>
