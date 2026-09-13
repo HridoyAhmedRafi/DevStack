@@ -46,7 +46,7 @@ const SelectedTechnologiesCard = ({
 
         <span>
           <RxCross2
-            className="text-[#94A3B8] text-2xl cursor-pointer"
+            className="text-[#94A3B8] text-2xl cursor-pointer hover:bg-[#ed8c852b] rounded-full"
             onClick={() => handleRemoveTechnologies(selectedTechnologie)}
           />
         </span>
